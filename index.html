@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">🎲DG</div>
+    <h1 class="game-rules-title">GAME RULES</h1>
+    <div class="wrapper hidden">
+      <div class="game-rules">
+        <p><span class="star">*</span> On a turn, a player rolls the dice 🎲 repeatedly. The goal is to accumulate as
+          many points as
+          possible, adding up (hold)
+          the
+          numbers rolled on the dice 🎲. However, if a player rolls a <span>1</span>, the player's turn is over and any
+          points they have
+          accumulated during this turn are forfeited. Rolling a <span>1</span> doesn't wipe out your entire score from
+          previous
+          turns,
+          just the total earned during that particular roll.
+
+          A player has to choose to hold (stop rolling the die 🎲) if they do not want to take a chance of rolling a
+          <span>1</span>
+          and
+          losing all of their points from this turn. If the player chooses to hold, all of the points rolled during that
+          turn are added to his or her score.
+
+          When a player reaches a total of <span>100</span> points, the game ends and that player is the
+          winner.
+          <br>
+          <br>
+          Have <span>FUN</span>
+        <div>...</div>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="game-container">
+    <!-- Player 1 -->
+    <section class="player-1 active">
+      <p class="player-1-title">PLAYER 1</p>
+      <p class="player-1-score">0</p>
+      <div class="player-1-current-score">
+        <p class="current-score-title-1">CURRENT</p>
+        <p class="current-score-1">0</p>
+      </div>
+    </section>
+
+    <!-- Player 2 -->
+    <section class="player-2">
+      <p class="player-2-title">PLAYER 2</p>
+      <p class="player-2-score">0</p>
+      <div class="player-2-current-score">
+        <p class="current-score-title-2">CURRENT</p>
+        <p class="current-score-2">0</p>
+      </div>
+    </section>
+  </main>
+
+  <button class="btn btn-new"><i class="fas fa-plus-circle"></i></i>NEW GAME</button>
+  <button class="btn btn-roll"><i class="fas fa-undo-alt"></i>ROLL DICE</button>
+  <button class="btn btn-hold"><i class="far fa-arrow-alt-circle-down"></i>HOLD</button>
+
+  <img src="/images/dice-1.png" alt="Dice" class="dice hidden">
+
+  <script src="script.js"></script>
+</body>
+
+</html>
